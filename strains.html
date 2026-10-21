@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Strain library | GanjaGuardian</title>
+  <meta name="description" content="Browse over 12,000 cannabis strains in the GanjaGuardian guide. Search by name, effect or flavour, filter by type and sort by THC or CBD.">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111513" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/app-icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <script src="assets/js/theme.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/strains-extra.js" defer></script>
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/icons.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/search.js" defer></script>
+  <script src="assets/js/library.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__mark brand__mark--pfp" src="assets/pfp-mark.png" alt="" width="30" height="30">
+        <span class="brand__name">GanjaGuardian</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="site-nav__link" href="index.html">Home</a>
+        <a class="site-nav__link is-active" href="strains.html" aria-current="page">Strains</a>
+        <a class="site-nav__link" href="#about-data">About data</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="wrap page-intro" aria-labelledby="library-title">
+      <p class="eyebrow">Strain library</p>
+      <h1 id="library-title">Strain library</h1>
+      <p class="lede">
+        Every strain in the guide, all 12,000+ of them, with the photos, flavours and effects people
+        actually talk about. Search by name or vibe, filter by type, or sort by THC when you want a
+        quick shortlist.
+      </p>
+    </section>
+
+    <section class="wrap library" aria-labelledby="search-heading">
+      <h2 id="search-heading" class="sr-only">Search and filter strains</h2>
+
+      <div class="library-controls">
+        <form class="toolbar" role="search" id="strain-search-form" novalidate>
+        <div class="search-field">
+          <span class="icon search-field__icon" data-icon="search"></span>
+          <label class="sr-only" for="strain-search">Search strains by name, classification, effect, flavour or terpene</label>
+          <input
+            id="strain-search"
+            name="q"
+            type="search"
+            placeholder="Search strains, effects, flavours…"
+            autocomplete="off"
+            spellcheck="false"
+          >
+        </div>
+
+        <div class="toolbar__group">
+          <label class="field-label" for="strain-sort">Sort</label>
+          <select id="strain-sort" name="sort">
+            <option value="thc-desc">THC %: high to low</option>
+            <option value="thc-asc">THC %: low to high</option>
+            <option value="cbd-desc">CBD %: high to low</option>
+            <option value="cbd-asc">CBD %: low to high</option>
+            <option value="name-asc">Name: A to Z</option>
+            <option value="name-desc">Name: Z to A</option>
+          </select>
+        </div>
+      </form>
+
+      <div class="chips" role="group" aria-label="Filter by classification">
+        <button class="chip is-selected" type="button" data-type="all" aria-pressed="true">All</button>
+        <button class="chip" type="button" data-type="Indica" aria-pressed="false">Indica</button>
+        <button class="chip" type="button" data-type="Sativa" aria-pressed="false">Sativa</button>
+        <button class="chip" type="button" data-type="Hybrid" aria-pressed="false">Hybrid</button>
+      </div>
+      </div>
+
+      <p class="results-line" id="results-line" role="status" aria-live="polite">Loading strain profiles…</p>
+
+      <ul class="card-grid" id="strain-grid" aria-label="Strain profiles"></ul>
+
+      <div class="load-more">
+        <button class="button" type="button" id="load-more" hidden>Load more strains</button>
+      </div>
+
+      <div class="empty-state" id="empty-state" hidden>
+        <h2 class="empty-state__title">No strains match</h2>
+        <p class="muted">Try a different name, effect or flavour, or reset the filters.</p>
+        <button class="button" type="button" id="reset-filters">Reset filters</button>
+      </div>
+
+      <noscript>
+        <p class="noscript-note">This library needs JavaScript to filter the strain data. All content is bundled locally in this folder.</p>
+      </noscript>
+    </section>
+
+    <section class="wrap about-data" id="about-data" aria-labelledby="about-data-title">
+      <h2 id="about-data-title">About this guide</h2>
+      <p>
+        Strain descriptions are a friendly roundup of commonly reported info, not lab results.
+        Potency changes with the grower, the batch and the product, so use the numbers as a rough
+        guide.
+      </p>
+      <p>
+        Cannabis laws vary by region; this site is intended for adults of legal age only.
+      </p>
+      <p class="source-note">
+        Privacy: no accounts, cookies, analytics, third-party fonts or external requests. Your light or dark theme choice stays in this browser. The site is a set of
+        local HTML, CSS and JavaScript files that you can read and publish as-is. Photos are openly licensed
+        and credited on the <a href="credits.html">photo credits page</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <p class="site-footer__links">
+        <a href="index.html">Home</a>
+        <a href="strains.html">Strains</a>
+        <a href="credits.html">Credits &amp; data</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
