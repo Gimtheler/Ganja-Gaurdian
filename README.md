@@ -65,4 +65,4 @@ Potency numbers are reference examples, not lab results. Effects and flavours ar
 * a favourites list
 * maybe a simple grow log
 
-I am still learning, so the code is simple on purpose. If something looks off, open an issue or send a fix.
+
