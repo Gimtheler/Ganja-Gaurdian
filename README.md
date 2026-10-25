@@ -2,7 +2,7 @@
 
 I made GanjaGuardian because most strain sites feel like a shop first and a guide second. This one is a clean place to look up strains, look at flower photos, and compare what people report.
 
-It is a static site. No account, no server, no build step.
+Inside of "Releases" you can find the APK version + the Windows if you're interested in this project more :) 
 
 ![GanjaGuardian homepage](screenshots/home.png)
 
