@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Safety To the Arts | GanjaGuardian</title>
+  <meta name="description" content="Bud safety checks for sprayed and PGR flower, pesticides, synthetic cannabinoids, weight additives, cut and uncut buds, pests, trim, cure and general quality.">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111513" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/app-icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <script src="assets/js/theme.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/icons.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/safety.js" defer></script>
+  <script>
+    try {
+      if (window.localStorage.getItem('gg-age-ok') === 'true') {
+        document.documentElement.classList.add('age-ok');
+      }
+    } catch (error) {}
+  </script>
+  <script src="assets/js/age-gate.js" defer></script>
+</head>
+<body>
+  <div class="age-gate" id="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-gate-title" aria-describedby="age-gate-copy">
+    <div class="age-gate__card">
+      <img class="age-gate__mark" src="assets/pfp-mark.png" alt="" width="52" height="52">
+      <p class="eyebrow">GanjaGuardian</p>
+      <h2 id="age-gate-title">Are you 18 or older?</h2>
+       <p id="age-gate-copy">This site contains cannabis strain information and harm reduction guides. It is for adults of legal age only.</p>
+      <p class="age-gate__legal">By entering, you confirm you are old enough to view cannabis content where you live.</p>
+      <div class="age-gate__actions">
+        <button class="button" id="age-gate-yes" type="button">Yes, enter</button>
+        <a class="button button--ghost" href="https://www.google.com/">No, leave</a>
+      </div>
+      <p class="age-gate__note">No account and no tracking. Your answer stays in this browser.</p>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__mark brand__mark--pfp" src="assets/pfp-mark.png" alt="" width="30" height="30">
+        <span class="brand__name">GanjaGuardian</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="site-nav__link" href="index.html">Home</a>
+        <a class="site-nav__link" href="strains.html">Strains</a>
+        <a class="site-nav__link" href="quiz.html">Quiz</a>
+        <a class="site-nav__link is-active" href="safety.html" aria-current="page">Safety</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="wrap page-intro" aria-labelledby="safety-title">
+      <p class="eyebrow">Good bud guide</p>
+      <h1 id="safety-title">Safety To the Arts</h1>
+      <p class="lede">Sprayed is not one chemical. Learn the PGR pattern, pesticide residue, synthetic sprays, weight additives and the checks that help.</p>
+    </section>
+
+    <section class="wrap safety-page" aria-label="Bud safety and quality checks">
+      <div class="safety-compare">
+        <article class="safety-group">
+          <div class="safety-group__head">
+            <h2>Sprayed / PGR weed</h2>
+          </div>
+          <div class="safety-pair">
+            <div class="safety-photo">
+              <div class="safety-photo__frame">
+                <img src="assets/images/Photos1/safety-chem-burn.jpg" alt="Cannabis leaf with brown fertilizer burn spots." width="960" height="1420" loading="lazy">
+                <span class="safety-photo__tag">Chemical burn:</span>
+              </div>
+              <button class="safety-info" type="button" aria-label="Sprayed or PGR cannabis checks" aria-describedby="safety-tip-sprayed">
+                <span class="safety-info__mark" aria-hidden="true">i</span>
+              </button>
+              <span class="safety-tip" id="safety-tip-sprayed" role="tooltip">PGR flower is often described as tight, smooth and clumped, with few visible trichomes and dull hairs. Pesticides, synthetic cannabinoids, sugar, sand, glass, talc or rubbery additives are other sprayed risks. This photo shows fertilizer burn, not a PGR sample. Visual checks are clues only. Lab testing is the only proof.</span>
+            </div>
+            <div class="safety-photo">
+              <div class="safety-photo__frame">
+                <img src="assets/images/Photos1/cannabis-colors-macro.jpg" alt="Healthy cannabis flower close-up." width="800" height="600" loading="lazy">
+                <span class="safety-photo__tag">Clean:</span>
+              </div>
+              <button class="safety-info" type="button" aria-label="Clean cannabis checks" aria-describedby="safety-tip-clean">
+                <span class="safety-info__mark" aria-hidden="true">i</span>
+              </button>
+              <span class="safety-tip" id="safety-tip-clean" role="tooltip">Even colour, intact structure and no powder, residue or chemical smell. A clean look is a good start, not a guarantee.</span>
+            </div>
+          </div>
+          <p class="safety-group__note">The left photo is fertilizer burn, a sign of plant stress. It is not a PGR sample. Flower similar to PGR is usually described as tight, smooth and clumped, but structure alone cannot prove it.</p>
+        </article>
+
+        <article class="safety-group">
+          <div class="safety-group__head">
+            <h2>Cut / Uncut</h2>
+          </div>
+          <div class="safety-pair">
+            <div class="safety-photo">
+              <div class="safety-photo__frame">
+                <img src="assets/images/Photos1/blue-dream-cut.jpg" alt="Trimmed and dried cannabis flower." width="800" height="600" loading="lazy">
+                <span class="safety-photo__tag">Cut:</span>
+              </div>
+              <button class="safety-info" type="button" aria-label="Cut flower checks" aria-describedby="safety-tip-cut">
+                <span class="safety-info__mark" aria-hidden="true">i</span>
+              </button>
+              <span class="safety-tip" id="safety-tip-cut" role="tooltip">Trimmed and dried flower. Fewer leaves and stems means less hiding space for pests or mould.</span>
+            </div>
+            <div class="safety-photo">
+              <div class="safety-photo__frame">
+                <img src="assets/images/Photos1/safety-dry-plant.jpg" alt="Untrimmed cannabis plant with buds and leaves." width="960" height="720" loading="lazy">
+                <span class="safety-photo__tag">Uncut:</span>
+              </div>
+              <button class="safety-info" type="button" aria-label="Uncut cannabis checks" aria-describedby="safety-tip-uncut">
+                <span class="safety-info__mark" aria-hidden="true">i</span>
+              </button>
+              <span class="safety-tip" id="safety-tip-uncut" role="tooltip">Whole plant or untrimmed branch. More leaf, stem and moisture, so inspect deeper for mould, mites and debris.</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <section class="sprayed-guide" id="sprayed-guide" aria-labelledby="sprayed-guide-title">
+        <div class="sprayed-guide__intro">
+          <p class="eyebrow">What sprayed can mean</p>
+          <h2 id="sprayed-guide-title">PGR weed is one type, not the whole story</h2>
+          <p>
+            Sprayed is a street word, not a lab result. It usually means flower was treated
+            after harvest to make it heavier, denser, harder, stickier or stronger looking.
+            The tight, clumped, rock hard bud people call PGR weed is one pattern. Pesticides,
+            synthetic cannabinoids, sugar, sand, glass, talc, rubbery additives and
+            flavour sprays are others.
+          </p>
+          <p class="sprayed-guide__note">
+            A dense bud is not automatically sprayed. Genetics, machine trimming, compression
+            and a rushed cure can all make flower look tight. Only a lab test can prove a
+            residue or adulterant.
+          </p>
+        </div>
+
+        <div class="sprayed-grid">
+          <article class="sprayed-card">
+            <span class="sprayed-card__tag">The clumped bud warning</span>
+            <h3>PGRs</h3>
+            <p><strong>What they are:</strong> plant growth regulators such as paclobutrazol, chlormequat, daminozide or uniconazole. They are used to control stretch and bulk up structure. Rules vary, and many are not approved for cannabis.</p>
+            <p><strong>What people report:</strong> rock hard, smooth, clumped buds, few visible trichomes, dull orange and brown hairs, a chemical or hay smell and a harsh smoke.</p>
+            <p class="sprayed-card__caution">Clues only. Dense structure can also come from genetics or handling.</p>
+          </article>
+
+          <article class="sprayed-card">
+            <span class="sprayed-card__tag">Residue risk</span>
+            <h3>Pesticides and fungicides</h3>
+            <p><strong>What they are:</strong> insecticides, miticides and mould preventatives. Some leave residues that can survive combustion.</p>
+            <p><strong>What people report:</strong> white powder, a bitter or chemical taste, a burning throat, headache or nausea.</p>
+            <p class="sprayed-card__caution">Ask for a pesticide panel. A smell or a photo cannot confirm it.</p>
+          </article>
+
+          <article class="sprayed-card">
+            <span class="sprayed-card__tag">Emergency risk</span>
+            <h3>Synthetic cannabinoids</h3>
+            <p><strong>What they are:</strong> spice or K2 type chemicals sprayed onto low grade flower to make it much stronger. The dose is unpredictable.</p>
+            <p><strong>What people report:</strong> numbness, a chemical or solvent smell, racing heart, panic, vomiting, seizure or fainting.</p>
+            <p class="sprayed-card__caution">Call emergency services if someone is seriously unwell. Do not smoke more.</p>
+          </article>
+
+          <article class="sprayed-card">
+            <span class="sprayed-card__tag">Weight and shine</span>
+            <h3>Sugar, sand, glass and rubbery additives</h3>
+            <p><strong>What they are:</strong> sugar water, Brix, syrup, hairspray, glue, sand, glass, talc, salt, chalk, oils or rubber and latex type products used to add weight or make buds look frosty and sticky.</p>
+            <p><strong>What people report:</strong> a gritty feel, white dust, an oily film, crackling or sparks when burned, black ash and lung irritation.</p>
+            <p class="sprayed-card__caution">Glass or sand can damage lungs. Do not use it.</p>
+          </article>
+
+          <article class="sprayed-card">
+            <span class="sprayed-card__tag">Not always dangerous</span>
+            <h3>Flavour and terpene sprays</h3>
+            <p><strong>What they are:</strong> natural or synthetic terpene and flavour sprays, sometimes called gas or flavour drops.</p>
+            <p><strong>What people report:</strong> a smell much stronger than the bud looks, perfume, solvent, plastic or rubber notes, or an oily feel.</p>
+            <p class="sprayed-card__caution">Unknown solvents can irritate lungs. A rubber or plastic smell is a red flag, not proof of one chemical.</p>
+          </article>
+
+          <article class="sprayed-card">
+            <span class="sprayed-card__tag">Not the same thing</span>
+            <h3>Fertilizer burn</h3>
+            <p><strong>What it is:</strong> brown, crispy leaf edges from overfeeding or salt buildup. It is a sign of plant stress, not proof of spraying.</p>
+            <p><strong>Why it is here:</strong> the photo at the top shows fertilizer burn. It is one clue of chemical stress, not a PGR sample.</p>
+            <p class="sprayed-card__caution">Do not use a leaf photo to diagnose PGR use.</p>
+          </article>
+        </div>
+
+        <div class="sprayed-check">
+          <h3>Clumped bud check</h3>
+          <ol>
+            <li><strong>Squeeze gently.</strong> A natural bud should feel dense but springy. A rock hard, wet centred or crumbly clump is a warning sign.</li>
+            <li><strong>Look closely.</strong> Flower similar to PGR can look smooth and swollen with few trichomes and dull hairs. White powder, grit, spray droplets or an oily film are separate red flags.</li>
+            <li><strong>Smell it.</strong> Solvent, rubber, plastic, ammonia or perfume smells are reasons to stop. A hay smell can also mean a bad cure.</li>
+            <li><strong>Do not use a flame as a test.</strong> If it crackles, sparks or burns black, stop. Burning unknown residue can expose your lungs.</li>
+            <li><strong>Lab test.</strong> Pesticides, PGRs, heavy metals and synthetic cannabinoids need a lab. A photo or a squeeze cannot prove them.</li>
+          </ol>
+        </div>
+
+        <div class="sprayed-help">
+          <h3>If you think it has been sprayed</h3>
+          <ul>
+            <li>Stop smoking or vaping it. Do not give it away or sell it.</li>
+            <li>Keep the flower, packaging and any receipt. Note the smell, taste, time and symptoms.</li>
+            <li>Seek urgent medical help for chest pain, trouble breathing, seizures, fainting, a racing heart or severe vomiting.</li>
+            <li>Report it to your local health authority or cannabis regulator where legal.</li>
+            <li>Do not try to wash, cook or cure it again. You cannot remove an unknown residue at home.</li>
+          </ul>
+          <p class="sprayed-help__note">This is harm reduction information, not medical advice. If you are worried about symptoms, contact a doctor or emergency service.</p>
+        </div>
+      </section>
+
+      <div class="safety-checks-head">
+        <h2>Quality checks</h2>
+      </div>
+      <ul class="safety-checks" aria-label="Bud quality checks">
+        <li class="safety-check">
+          <div class="safety-check__frame">
+            <img src="assets/images/Photos1/kush-trichome.jpg" alt="Close-up of cannabis trichomes." width="800" height="600" loading="lazy">
+            <span class="safety-photo__tag">Trichomes</span>
+          </div>
+          <button class="safety-info" type="button" aria-label="Trichome checks" aria-describedby="safety-tip-trichomes">
+            <span class="safety-info__mark" aria-hidden="true">i</span>
+          </button>
+          <span class="safety-tip" id="safety-tip-trichomes" role="tooltip">Cloudy, milky trichomes with a little amber usually look ripe. Clear can be early. Heavy amber can mean degraded THC.</span>
+        </li>
+        <li class="safety-check">
+          <div class="safety-check__frame">
+            <img src="assets/images/Photos1/safety-spider-mites.jpg" alt="Cannabis leaf with spider mite webbing and damage." width="960" height="720" loading="lazy">
+            <span class="safety-photo__tag">Pests</span>
+          </div>
+          <button class="safety-info" type="button" aria-label="Pest checks" aria-describedby="safety-tip-pests">
+            <span class="safety-info__mark" aria-hidden="true">i</span>
+          </button>
+          <span class="safety-tip" id="safety-tip-pests" role="tooltip">Check for webbing, black specks, tiny mites or insects, especially under leaves and deep inside buds.</span>
+        </li>
+        <li class="safety-check">
+          <div class="safety-check__frame">
+            <img src="assets/images/Photos1/cut-reference.jpg" alt="Trimmed dried cannabis flower." width="800" height="600" loading="lazy">
+            <span class="safety-photo__tag">Trim</span>
+          </div>
+          <button class="safety-info" type="button" aria-label="Trim checks" aria-describedby="safety-tip-trim">
+            <span class="safety-info__mark" aria-hidden="true">i</span>
+          </button>
+          <span class="safety-tip" id="safety-tip-trim" role="tooltip">Tight trim with few sugar leaves. Loose leaf can hide pests, mould or a rough cure.</span>
+        </li>
+        <li class="safety-check">
+          <div class="safety-check__frame">
+            <img src="assets/images/Photos1/harvest-drying.jpg" alt="Cannabis branches hanging in a drying room." width="800" height="600" loading="lazy">
+            <span class="safety-photo__tag">Cure</span>
+          </div>
+          <button class="safety-info" type="button" aria-label="Cure checks" aria-describedby="safety-tip-cure">
+            <span class="safety-info__mark" aria-hidden="true">i</span>
+          </button>
+          <span class="safety-tip" id="safety-tip-cure" role="tooltip">Slow dry and cure. A hay smell, harsh smoke or a damp centre can mean it was rushed.</span>
+        </li>
+        <li class="safety-check">
+          <div class="safety-check__frame">
+            <img src="assets/images/Photos1/macro-bud.jpg" alt="Close-up of dense cannabis flower structure." width="800" height="600" loading="lazy">
+            <span class="safety-photo__tag">Structure</span>
+          </div>
+          <button class="safety-info" type="button" aria-label="Structure checks" aria-describedby="safety-tip-structure">
+            <span class="safety-info__mark" aria-hidden="true">i</span>
+          </button>
+          <span class="safety-tip" id="safety-tip-structure" role="tooltip">Natural buds are dense but springy. Rock hard, smooth, clumped, brittle or wet centred flower can be similar to PGR, over dried or badly handled. Structure alone is not proof.</span>
+        </li>
+      </ul>
+
+      <div class="safety-more-head">
+        <h2>More checks</h2>
+      </div>
+      <ul class="safety-more" aria-label="More bud checks">
+        <li class="safety-more__item">
+          <span>Smell</span>
+          <button class="safety-info safety-info--chip" type="button" aria-label="Smell checks" aria-describedby="safety-tip-smell">
+            <span class="safety-info__mark" aria-hidden="true">i</span>
+          </button>
+          <span class="safety-tip" id="safety-tip-smell" role="tooltip">Fresh, strain specific aroma. Ammonia, mildew, solvent, plastic or rubber smells are red flags. A hay smell can mean a rushed cure.</span>
+        </li>
+        <li class="safety-more__item">
+          <span>Ash</span>
+          <button class="safety-info safety-info--chip" type="button" aria-label="Ash checks" aria-describedby="safety-tip-ash">
+            <span class="safety-info__mark" aria-hidden="true">i</span>
+          </button>
+          <span class="safety-tip" id="safety-tip-ash" role="tooltip">Clean grey white ash and smooth smoke are preferred. Black ash, crackling, sparks or a gritty taste can point to a bad cure or contamination. Stop if the flower sparks or pops.</span>
+        </li>
+        <li class="safety-more__item">
+          <span>Mould</span>
+          <button class="safety-info safety-info--chip" type="button" aria-label="Mould checks" aria-describedby="safety-tip-mould">
+            <span class="safety-info__mark" aria-hidden="true">i</span>
+          </button>
+          <span class="safety-tip" id="safety-tip-mould" role="tooltip">Grey fuzz, white powder, brown patches or a musty smell. Do not use mouldy flower.</span>
+        </li>
+        <li class="safety-more__item">
+          <span>PGR check</span>
+          <button class="safety-info safety-info--chip" type="button" aria-label="PGR checks" aria-describedby="safety-tip-pgr">
+            <span class="safety-info__mark" aria-hidden="true">i</span>
+          </button>
+          <span class="safety-tip" id="safety-tip-pgr" role="tooltip">Tight, smooth, clumped buds with few trichomes and dull hairs are commonly called PGR weed. Genetics and handling can look similar. Structure alone is not proof.</span>
+        </li>
+        <li class="safety-more__item">
+          <span>Residue</span>
+          <button class="safety-info safety-info--chip" type="button" aria-label="Residue checks" aria-describedby="safety-tip-residue">
+            <span class="safety-info__mark" aria-hidden="true">i</span>
+          </button>
+          <span class="safety-tip" id="safety-tip-residue" role="tooltip">White powder, grit, sticky sugar, an oily film or a soapy feel are reasons to stop. A lab test is the only proof.</span>
+        </li>
+        <li class="safety-more__item">
+          <span>Lab test</span>
+          <button class="safety-info safety-info--chip" type="button" aria-label="Lab testing checks" aria-describedby="safety-tip-lab">
+            <span class="safety-info__mark" aria-hidden="true">i</span>
+          </button>
+          <span class="safety-tip" id="safety-tip-lab" role="tooltip">Ask for pesticide, PGR, heavy metal, mould and potency testing where legal. Visual checks cannot prove safety.</span>
+        </li>
+      </ul>
+
+      <p class="safety-source">
+        <span class="safety-source__label">source:</span>
+        <a href="https://commons.wikimedia.org/wiki/File:Fertilizer-Burn.jpg">Fertilizer burn</a> (Fenrisulfir, CC BY-SA 3.0),
+        <a href="https://commons.wikimedia.org/wiki/File:Dry_cannabis_plant.jpg">Dry cannabis plant</a> (Fireworks1165, public domain),
+        <a href="https://commons.wikimedia.org/wiki/File:Spint_op_Cannabis_Sativa.jpg">Spider mite damage</a> (Rikva, public domain).
+        <a href="credits.html">full credits</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <p class="site-footer__links">
+        <a href="index.html">Home</a>
+        <a href="strains.html">Strains</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="safety.html">Safety</a>
+        <a href="credits.html">Credits &amp; data</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Strain quiz | GanjaGuardian</title>
+  <meta name="description" content="Answer 20 quick questions and get a real cannabis strain match from the GanjaGuardian library.">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111513" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/app-icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <script src="assets/js/theme.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/verified-photos.js" defer></script>
+  <script src="assets/js/strains-extra.js" defer></script>
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/icons.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/quiz.js" defer></script>
+  <script>
+    try {
+      if (window.localStorage.getItem('gg-age-ok') === 'true') {
+        document.documentElement.classList.add('age-ok');
+      }
+    } catch (error) {}
+  </script>
+  <script src="assets/js/age-gate.js" defer></script>
+</head>
+<body>
+  <div class="age-gate" id="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-gate-title" aria-describedby="age-gate-copy">
+    <div class="age-gate__card">
+      <img class="age-gate__mark" src="assets/pfp-mark.png" alt="" width="52" height="52">
+      <p class="eyebrow">GanjaGuardian</p>
+      <h2 id="age-gate-title">Are you 18 or older?</h2>
+       <p id="age-gate-copy">This site contains cannabis strain information and harm reduction guides. It is for adults of legal age only.</p>
+      <p class="age-gate__legal">By entering, you confirm you are old enough to view cannabis content where you live.</p>
+      <div class="age-gate__actions">
+        <button class="button" id="age-gate-yes" type="button">Yes, enter</button>
+        <a class="button button--ghost" href="https://www.google.com/">No, leave</a>
+      </div>
+      <p class="age-gate__note">No account and no tracking. Your answer stays in this browser.</p>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__mark brand__mark--pfp" src="assets/pfp-mark.png" alt="" width="30" height="30">
+        <span class="brand__name">GanjaGuardian</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="site-nav__link" href="index.html">Home</a>
+        <a class="site-nav__link" href="strains.html">Strains</a>
+        <a class="site-nav__link is-active" href="quiz.html" aria-current="page">Quiz</a>
+        <a class="site-nav__link" href="safety.html">Safety</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="wrap page-intro" aria-labelledby="quiz-title">
+      <p class="eyebrow">Find your match</p>
+      <h1 id="quiz-title">What strain should you try?</h1>
+      <p class="lede">
+        Twenty quick questions about your day, your vibe and how you like to grow,
+        matched against the full strain library.
+      </p>
+    </section>
+
+    <section class="wrap quiz-shell" id="quiz-root" aria-live="polite"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <p class="site-footer__links">
+        <a href="index.html">Home</a>
+        <a href="strains.html">Strains</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="safety.html">Safety</a>
+        <a href="credits.html">Credits &amp; data</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
